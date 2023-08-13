@@ -1,0 +1,13 @@
+{
+  "profiles": {
+    "Docker Compose": {
+      "commandName": "DockerCompose",
+      "commandVersion": "1.0",
+      "serviceActions": {
+        "cleverbit.codingcase.api": "StartDebugging",
+        "cleverbit.codingcase.seedworker": "StartDebugging",
+        "cleverbit.codingcase.ui": "StartDebugging"
+      }
+    }
+  }
+}

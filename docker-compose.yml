@@ -1,0 +1,22 @@
+version: '3.4'
+
+services:
+  cleverbit.codingcase.api:
+    image: ${DOCKER_REGISTRY-}cleverbitcodingcaseapi
+    build:
+      context: .
+      dockerfile: src/Services/Cleverbit.CodingCase.Api/Dockerfile
+
+  cleverbit.codingcase.seedworker:
+    image: ${DOCKER_REGISTRY-}cleverbitcodingcaseseedworker
+    build:
+      context: .
+      dockerfile: src/Services/Cleverbit.CodingCase.SeedWorker/Dockerfile
+
+
+  cleverbit.codingcase.ui:
+    image: ${DOCKER_REGISTRY-}cleverbitcodingcaseui
+    build:
+      context: .
+      dockerfile: src/Services/Cleverbit.CodingCase.UI/Dockerfile
+

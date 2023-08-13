@@ -1,0 +1,14 @@
+{
+  "profiles": {
+    "Cleverbit.CodingCase.SeedWorker": {
+      "commandName": "Project",
+      "environmentVariables": {
+        "DOTNET_ENVIRONMENT": "Development"
+      },
+      "dotnetRunMessages": true
+    },
+    "Docker": {
+      "commandName": "Docker"
+    }
+  }
+}

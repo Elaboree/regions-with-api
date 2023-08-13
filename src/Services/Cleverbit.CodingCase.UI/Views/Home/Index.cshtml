@@ -1,0 +1,30 @@
+﻿@model IEnumerable<EmployeeItem>  
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Employee List With Regions</title>
+</head>
+<body>
+    <h1>Employee List</h1>
+    <table>
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Surname</th>
+                <th>Region Name</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var employee in Model)
+            {
+                <tr>
+                    <td>@employee.Name</td>
+                    <td>@employee.Surname</td>
+                    <td>@employee.RegionName</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</body>
+</html>
